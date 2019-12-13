@@ -1,6 +1,11 @@
 '''
 Copyright (c) Microsoft Corporation.
 Licensed under the MIT license.
+
+The standard DQN replay memory modified to support float64 rewards.
+
+This script modifies the Dopamine's implementation of an out-of-graph 
+replay memory + in-graph wrapper to support float64 formatted rewards.
 '''
 
 # This file is derived from Dopamine with the following original copyright note:
@@ -18,11 +23,6 @@ Licensed under the MIT license.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""The standard DQN replay memory modified to support float64 rewards.
-
-This script modifies the Dopamine's implementation of an out-of-graph 
-replay memory + in-graph wrapper to support float64 formatted rewards.
-"""
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function

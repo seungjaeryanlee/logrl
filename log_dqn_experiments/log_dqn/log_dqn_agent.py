@@ -1,6 +1,11 @@
 '''
 Copyright (c) Microsoft Corporation.
 Licensed under the MIT license.
+
+Compact implementation of a LogDQN agent.
+
+Details in "Using a Logarithmic Mapping to Enable Lower Discount Factors 
+in Reinforcement Learning" by van Seijen, Fatemi, Tavakoli (2019).
 '''
 
 # This file is partially derived from Dopamine with the following original copyright note:
@@ -17,13 +22,6 @@ Licensed under the MIT license.
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-"""Compact implementation of a LogDQN agent.
-
-Details in "Using a Logarithmic Mapping to Enable Lower Discount Factors 
-in Reinforcement Learning" by van Seijen, Fatemi, Tavakoli (2019).
-"""
-
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function

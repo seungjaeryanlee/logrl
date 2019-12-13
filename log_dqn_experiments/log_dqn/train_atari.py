@@ -1,6 +1,9 @@
 '''
 Copyright (c) Microsoft Corporation.
 Licensed under the MIT license.
+
+The entry point for running an agent on an Atari 2600 domain.
+This script modifies Dopamine's `train.py` to support LogDQN.
 '''
 
 # This file is partially derived from Dopamine with the following original copyright note:
@@ -18,10 +21,6 @@ Licensed under the MIT license.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-r"""The entry point for running an agent on an Atari 2600 domain.
-
-This script modifies Dopamine's `train.py` to support LogDQN.
-"""
 
 from __future__ import absolute_import
 from __future__ import division
